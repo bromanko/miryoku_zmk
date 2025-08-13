@@ -1,0 +1,4 @@
+outboard_repository="rtitmuss/zmk"
+outboard_ref="tornblue_r1"
+outboard_from="app/boards/arm/tornblue"
+outboard_to="boards/arm/tornblue"
