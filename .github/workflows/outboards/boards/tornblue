@@ -1,5 +1,5 @@
 outboard_repository="rtitmuss/zmk"
 outboard_ref="tornblue_r1"
-outboard_branches="manna-harbour/zmk/zephyr-2.5 manna-harbour/zmk/zephyr-2.5+krikun98-mouse-pr"
+outboard_branches=""
 outboard_from="app/boards/arm/tornblue"
 outboard_to="boards/arm/tornblue"
