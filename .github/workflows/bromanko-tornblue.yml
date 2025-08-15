@@ -6,5 +6,5 @@ jobs:
     secrets: inherit
     with:
       board: '["tornblue_left","tornblue_right"]'
-      nav: vi
-      custom_config: "#define MIRYOKU_CLIPBOARD_MAC"
+      nav: '["vi"]'
+      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
