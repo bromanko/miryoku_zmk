@@ -11,6 +11,7 @@
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
+      hold-trigger-on-release;
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
@@ -20,6 +21,7 @@
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&mo>, <&kp>;
+      hold-trigger-on-release;
     };
   };
 };
