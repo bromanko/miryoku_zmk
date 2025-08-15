@@ -1,0 +1,10 @@
+name: "bromanko's TornBlue"
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["tornblue_left","tornblue_right"]'
+      nav: vi
+      custom_config: "#define MIRYOKU_CLIPBOARD_MAC"
