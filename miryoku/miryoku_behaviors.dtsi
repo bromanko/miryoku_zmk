@@ -20,7 +20,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
     u_lt: u_lt {
@@ -29,7 +29,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
     u_mt_l: u_mt_l {
@@ -38,7 +38,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS>;
       hold-trigger-on-release;
@@ -49,7 +49,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;
@@ -60,7 +60,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS>;
       hold-trigger-on-release;
@@ -71,7 +71,7 @@
       tapping-term-ms = <U_TAPPING_TERM>;
       quick-tap-ms = <U_QUICK_TAP>;
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;

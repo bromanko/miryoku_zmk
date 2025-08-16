@@ -25,7 +25,7 @@
 
 #define U_TAPPING_TERM 280
 #define U_QUICK_TAP 175
-#define U_REQUIRE_PRIOR_IDLE 120
+#define U_REQUIRE_PRIOR_IDLE 90
 
 #include "miryoku_clipboard.h"
 
