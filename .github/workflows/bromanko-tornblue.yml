@@ -7,4 +7,6 @@ jobs:
     with:
       board: '["tornblue_left","tornblue_right"]'
       nav: '["vi"]'
+      alphas: '["colemakdh-positional"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
