@@ -11,7 +11,6 @@
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
-      hold-trigger-on-release;
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
@@ -21,6 +20,49 @@
       require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&mo>, <&kp>;
+    };
+    u_mt_l: u_mt_l {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <KEYS_R THUMBS>;
+      hold-trigger-on-release;
+    };
+    u_mt_r: u_mt_r {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <KEYS_L THUMBS>;
+      hold-trigger-on-release;
+    };
+    u_lt_l: u_lt_l {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
+      bindings = <&mo>, <&kp>;
+      hold-trigger-key-positions = <KEYS_R THUMBS>;
+      hold-trigger-on-release;
+    };
+    u_lt_r: u_lt_r {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
+      bindings = <&mo>, <&kp>;
+      hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;
     };
   };
