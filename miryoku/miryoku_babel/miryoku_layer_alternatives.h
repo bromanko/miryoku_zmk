@@ -382,7 +382,7 @@ U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp 
 
 #define MIRYOKU_ALTERNATIVES_MODS \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-&sk LGUI,          &sk LALT,          &sk LCTRL,         &sk LSHFT,         U_NA,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              \
+&sk LGUI,          &sk LALT,          &sk LCTRL,         &sk LSHFT,         U_NA,              U_NU,              &sk RSHFT,         &sk RCTRL,         &sk RALT,          &sk RGUI,          \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MODS,      U_NA,              U_NU,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
