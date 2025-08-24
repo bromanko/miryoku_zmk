@@ -87,7 +87,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 #define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O,             \
-U_LT(U_MODS, Z),   U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_MODS, SLASH),\
+U_LT(U_MODS_LEFT, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_MODS_RIGHT, SLASH),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDHK \
@@ -380,11 +380,18 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
-#define MIRYOKU_ALTERNATIVES_MODS \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              &kp RSHFT,         &kp RCTRL,         &kp RALT,          &kp RGUI,          \
-U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MODS,      U_NA,              U_NU,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
+#define MIRYOKU_ALTERNATIVES_MODS_LEFT \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp M,             &kp N,             &kp E,             &kp I,             &kp O,             \
+U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MODS_LEFT, U_NA,              &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_MODS_RIGHT \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
+&kp A,             &kp R,             &kp S,             &kp T,             &kp G,             U_NU,              &kp RSHFT,         &kp RCTRL,         &kp RALT,          &kp RGUI,          \
+&kp Z,             &kp X,             &kp C,             &kp D,             &kp V,             U_NU,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
 
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
