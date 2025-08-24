@@ -1,0 +1,152 @@
+// Copyright 2022 Manna Harbour
+// https://github.com/manna-harbour/miryoku
+
+#define MIRYOKU_HOMEROW_MOD_COMBOS_TERM 50
+
+/ {
+  macros {
+    // Left hand modifier combos
+    m_lgui_lalt: m_lgui_lalt {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LGUI &kp LALT>;
+    };
+    m_lgui_lctrl: m_lgui_lctrl {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LGUI &kp LCTRL>;
+    };
+    m_lgui_lshft: m_lgui_lshft {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LGUI &kp LSHFT>;
+    };
+    m_lalt_lctrl: m_lalt_lctrl {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LALT &kp LCTRL>;
+    };
+    m_lalt_lshft: m_lalt_lshft {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LALT &kp LSHFT>;
+    };
+    m_lctrl_lshft: m_lctrl_lshft {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LCTRL &kp LSHFT>;
+    };
+    
+    // Right hand modifier combos
+    m_rshft_rctrl: m_rshft_rctrl {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RSHFT &kp RCTRL>;
+    };
+    m_rshft_ralt: m_rshft_ralt {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RSHFT &kp RALT>;
+    };
+    m_rshft_rgui: m_rshft_rgui {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RSHFT &kp RGUI>;
+    };
+    m_rctrl_ralt: m_rctrl_ralt {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RCTRL &kp RALT>;
+    };
+    m_rctrl_rgui: m_rctrl_rgui {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RCTRL &kp RGUI>;
+    };
+    m_ralt_rgui: m_ralt_rgui {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RALT &kp RGUI>;
+    };
+  };
+
+  combos {
+    compatible = "zmk,combos";
+    
+    // Left hand combos (A=13, R=14, S=15, T=16)
+    combo_ar_lgui_lalt {
+      layers = <U_BASE>;
+      key-positions = <13 14>;
+      bindings = <&m_lgui_lalt>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_as_lgui_lctrl {
+      layers = <U_BASE>;
+      key-positions = <13 15>;
+      bindings = <&m_lgui_lctrl>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_at_lgui_lshft {
+      layers = <U_BASE>;
+      key-positions = <13 16>;
+      bindings = <&m_lgui_lshft>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_rs_lalt_lctrl {
+      layers = <U_BASE>;
+      key-positions = <14 15>;
+      bindings = <&m_lalt_lctrl>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_rt_lalt_lshft {
+      layers = <U_BASE>;
+      key-positions = <14 16>;
+      bindings = <&m_lalt_lshft>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_st_lctrl_lshft {
+      layers = <U_BASE>;
+      key-positions = <15 16>;
+      bindings = <&m_lctrl_lshft>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    
+    // Right hand combos (N=19, E=20, I=21, O=22)
+    combo_ne_rshft_rctrl {
+      layers = <U_BASE>;
+      key-positions = <19 20>;
+      bindings = <&m_rshft_rctrl>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_ni_rshft_ralt {
+      layers = <U_BASE>;
+      key-positions = <19 21>;
+      bindings = <&m_rshft_ralt>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_no_rshft_rgui {
+      layers = <U_BASE>;
+      key-positions = <19 22>;
+      bindings = <&m_rshft_rgui>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_ei_rctrl_ralt {
+      layers = <U_BASE>;
+      key-positions = <20 21>;
+      bindings = <&m_rctrl_ralt>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_eo_rctrl_rgui {
+      layers = <U_BASE>;
+      key-positions = <20 22>;
+      bindings = <&m_rctrl_rgui>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+    combo_io_ralt_rgui {
+      layers = <U_BASE>;
+      key-positions = <21 22>;
+      bindings = <&m_ralt_rgui>;
+      timeout-ms = <MIRYOKU_HOMEROW_MOD_COMBOS_TERM>;
+    };
+  };
+};
