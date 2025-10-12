@@ -18,7 +18,8 @@ MIRYOKU_X(NUM,        "Num") \
 MIRYOKU_X(SYM,        "Sym") \
 MIRYOKU_X(FUN,        "Fun") \
 MIRYOKU_X(MODS_LEFT,  "Mods Left") \
-MIRYOKU_X(MODS_RIGHT, "Mods Right")
+MIRYOKU_X(MODS_RIGHT, "Mods Right") \
+MIRYOKU_X(WM,         "WM")
 
 #define U_BASE       0
 #define U_EXTRA      1
@@ -32,5 +33,6 @@ MIRYOKU_X(MODS_RIGHT, "Mods Right")
 #define U_FUN        9
 #define U_MODS_LEFT  10
 #define U_MODS_RIGHT 11
+#define U_WM         12
 
 #endif

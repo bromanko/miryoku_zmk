@@ -87,8 +87,8 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 #define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O,             \
-U_LT(U_MODS_LEFT, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_MODS_RIGHT, SLASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_LT(U_MEDIA, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_FUN, SLASH),\
+U_NP,              U_NP,              U_LT(U_MODS_LEFT, ESC),U_LT(U_NAV, SPACE),U_LT(U_WM, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_MODS_RIGHT, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDHK \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -393,6 +393,12 @@ U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp 
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
 
 
+
+#define MIRYOKU_ALTERNATIVES_WM \
+&kp LA(N1),        &kp LA(N2),        &kp LA(N3),        &kp LA(N4),        &kp LA(N5),        &kp LA(N6),        &kp LA(N7),        &kp LA(N8),        &kp LA(N9),        &kp LA(N0),        \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp LA(M),         &kp LA(N),         &kp LA(E),         &kp LA(I),         &kp LA(O),         \
+&kp LA(TAB),       &kp LA(LS(TAB)),   &kp LA(COMMA),     &kp LA(EQUAL),     &kp LA(MINUS),     &kp LA(LS(N)),     &kp LA(LS(E)),     &kp LA(LS(I)),     &kp LA(LS(O)),     &kp LA(F),         \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp LA(SLASH),     U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
