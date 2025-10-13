@@ -382,13 +382,13 @@ U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp 
 
 #define MIRYOKU_ALTERNATIVES_MODS_LEFT \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
-&trans,            &kp LALT,          &kp LCTRL,         &kp LSHFT,         &kp LGUI,          &trans,            &trans,            &trans,            &trans,            &trans,            \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
 
 #define MIRYOKU_ALTERNATIVES_MODS_RIGHT \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
-&trans,            &trans,            &trans,            &trans,            &trans,            &kp RGUI,          &kp RSHFT,         &kp RCTRL,         &kp RALT,          &trans,            \
+&trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &kp RSHFT,         &kp RCTRL,         &kp RALT,          &kp RGUI,          \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            \
 &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            &trans
 
