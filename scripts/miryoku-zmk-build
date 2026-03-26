@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage:
+  miryoku-zmk-build BOARD [SHIELD]
+
+Examples:
+  miryoku-zmk-build nice_nano corne_left
+  miryoku-zmk-build nice_nano_v2 corne_left
+  miryoku-zmk-build nice_nano_v2 "corne_left nice_view_adapter nice_view"
+
+Optional environment:
+  MIRYOKU_ZMK_BRANCHES   Override the ZMK branch spec, e.g. user/repo/branch
+  MIRYOKU_ZMK_MODULES    Extra module specs separated by spaces
+  MIRYOKU_ZMK_PRISTINE=1 Use a pristine build
+EOF
+}
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" || $# -lt 1 ]]; then
+  usage
+  if [[ $# -lt 1 ]]; then
+    exit 1
+  fi
+  exit 0
+fi
+
+# shellcheck disable=SC1091
+source "$(cd -- "$(dirname -- "$0")" && pwd)/miryoku-zmk-lib.sh"
+
+board="$1"
+shield="${2:-}"
+
+# shellcheck disable=SC2034
+MIRYOKU_BRANCHES="${MIRYOKU_ZMK_BRANCHES:-}"
+# shellcheck disable=SC2034
+MIRYOKU_MODULE_SPECS="${MIRYOKU_ZMK_MODULES:-}"
+
+miryoku_prepare_outboards "$board" "$shield"
+miryoku_setup_workspace
+miryoku_build "$board" "$shield"

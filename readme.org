@@ -41,6 +41,24 @@ First [[https://zmk.dev/docs/development/setup][set up the ZMK build environment
 
 Clone this repository and set [[https://zmk.dev/docs/development/build-flash#building-from-zmk-config-folder][ZMK_CONFIG]] to the absolute path of the [[config]] subdirectory.  Use the [[#config-file][config file]] to select alternative layout and mapping options.
 
+**** devenv (Nix)
+
+A [[https://devenv.sh/][devenv]] shell is included for local builds.
+
+1. Enter the shell with ~nix develop --no-pure-eval~ or ~devenv shell~.
+2. For automatic shell activation with direnv, run ~direnv allow~.  The included ~.envrc~ passes ~--accept-flake-config~ so the devenv Cachix substituter is accepted automatically.
+3. Initialise the local workspace with ~miryoku-zmk-init~.
+4. Build firmware with ~miryoku-zmk-build~.
+
+Examples:
+: miryoku-zmk-build nice_nano corne_left
+: miryoku-zmk-build nice_nano_v2 corne_left
+: miryoku-zmk-build nice_nano_v2 "corne_left nice_view_adapter nice_view"
+
+The shell sets ~ZMK_CONFIG~, configures the GNU Arm Embedded toolchain, creates a local workspace under [[.local]], and reuses the repository's outboard metadata for local builds of out-of-tree boards and shields.
+
+The first run bootstraps a Python virtual environment under [[.local/venv]] and installs the ZMK and Zephyr Python requirements into it.
+
 
 *** Workflow Builds
 

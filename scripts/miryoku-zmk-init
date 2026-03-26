@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# shellcheck disable=SC1091
+source "$(cd -- "$(dirname -- "$0")" && pwd)/miryoku-zmk-lib.sh"
+
+board="${1:-}"
+shield="${2:-}"
+
+# shellcheck disable=SC2034
+MIRYOKU_BRANCHES="${MIRYOKU_ZMK_BRANCHES:-}"
+# shellcheck disable=SC2034
+MIRYOKU_MODULE_SPECS="${MIRYOKU_ZMK_MODULES:-}"
+
+if [[ -n "$board" ]]; then
+  miryoku_prepare_outboards "$board" "$shield"
+fi
+
+miryoku_setup_workspace
+
+printf 'Workspace: %s\n' "$MIRYOKU_ZMK_DIR"
