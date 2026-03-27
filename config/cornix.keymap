@@ -1,0 +1,12 @@
+// Copyright 2026 Manna Harbour
+// https://github.com/manna-harbour/miryoku
+
+#include "../miryoku/custom_config.h"
+#include "../miryoku/mapping/50/cornix.h"
+#include "../miryoku/miryoku.dtsi"
+
+&{/keymap/BASE} {
+    sensor-bindings =
+        <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+        <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+};

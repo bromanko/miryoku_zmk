@@ -14,6 +14,7 @@ jobs:
         "adv360pro_left","adv360pro_right",
         "ahokore",
         "ble_chiffre",
+        "cornix_left","cornix_right",
         "corneish_zen_v1_left","corneish_zen_v1_right",
         "corneish_zen_v2_left","corneish_zen_v2_right",
         "dao_left","dao_right",

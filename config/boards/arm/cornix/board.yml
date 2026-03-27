@@ -1,0 +1,25 @@
+boards:
+  - name: cornix_left
+    vendor: jezail
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
+  - name: cornix_right
+    vendor: jezail
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
+  - name: cornix_ph_left
+    vendor: jezail
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
+  - name: cornix_dongle
+    vendor: jezail
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
